@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Принципы дизайна</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .design-principle {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .principle-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .principle-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .principle-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Принципы дизайна</h1>
+        <p class="italic">Фундаментальные основы визуальной гармонии</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="principles.html" class="active">Принципы</a></li>
+            <li><a href="styles.html">Стили</a></li>
+            <li><a href="tools.html">Инструменты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>Основные принципы дизайна</h2>
+                <p>Дизайн - это не просто эстетика, это система принципов, которые помогают создавать эффективные и привлекательные композиции. Рассмотрим ключевые принципы, которые используют профессиональные дизайнеры.</p>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">⚖️</div>
+                        <h3>1. Баланс</h3>
+                    </div>
+                    <p>Баланс создает ощущение стабильности в композиции. Существует три основных типа баланса:</p>
+                    <img src="images/balance.jpg" alt="Примеры баланса в дизайне" class="principle-image">
+                    <ul>
+                        <li><strong>Симметричный</strong> - элементы зеркально отражаются относительно центра</li>
+                        <li><strong>Асимметричный</strong> - баланс достигается за счет контраста разных по весу элементов</li>
+                        <li><strong>Радиальный</strong> - элементы расходятся из центра как лучи</li>
+                    </ul>
+                    <p>Пример: В логотипе Apple используется симметричный баланс, а в плакатах Swiss Style - асимметричный.</p>
+                </div>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">◑</div>
+                        <h3>2. Контраст</h3>
+                    </div>
+                    <p>Контраст создает визуальный интерес и помогает выделить важные элементы:</p>
+                    <img src="images/contrast.jpg" alt="Примеры контраста в дизайне" class="principle-image">
+                    <p>Может достигаться через:</p>
+                    <ul>
+                        <li>Цвет (черный/белый, теплый/холодный)</li>
+                        <li>Размер (большой/маленький)</li>
+                        <li>Форму (геометрическая/органическая)</li>
+                        <li>Текстуру (гладкая/шероховатая)</li>
+                    </ul>
+                    <p>Пример: Черно-белая типографика в плакатах Bauhaus демонстрирует сильный контраст.</p>
+                </div>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">★</div>
+                        <h3>3. Акцент</h3>
+                    </div>
+                    <p>Акцент помогает направить внимание зрителя на ключевые элементы:</p>
+                    <img src="images/emphasis.jpg" alt="Примеры акцента в дизайне" class="principle-image">
+                    <p>Способы создания акцента:</p>
+                    <div class="multi-level-list">
+                        <ol>
+                            <li>
+                                Цветом - яркий цвет на нейтральном фоне
+                                <ul>
+                                    <li>Пример: Красная кнопка "Купить"</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Размером - увеличенный элемент
+                                <ul>
+                                    <li>Пример: Заголовок статьи</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Формой - необычная форма среди стандартных
+                                <ul>
+                                    <li>Пример: Логотип Nike Swoosh</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">♬</div>
+                        <h3>4. Ритм и повторение</h3>
+                    </div>
+                    <p>Ритм создает движение и единство в композиции:</p>
+                    <img src="images/rhythm.jpg" alt="Примеры ритма в дизайне" class="principle-image">
+                    <p>Типы ритма:</p>
+                    <ul>
+                        <li><strong>Регулярный</strong> - одинаковые интервалы (как плитка)</li>
+                        <li><strong>Прогрессирующий</strong> - постепенное изменение</li>
+                        <li><strong>Случайный</strong> - хаотичное, но продуманное расположение</li>
+                    </ul>
+                    <p>Пример: Упаковка товаров часто использует повторяющиеся паттерны.</p>
+                </div>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">⇆</div>
+                        <h3>5. Пропорция и масштаб</h3>
+                    </div>
+                    <p>Правильные пропорции создают гармоничные отношения между элементами:</p>
+                    <img src="images/proportion.jpg" alt="Примеры пропорций в дизайне" class="principle-image">
+                    <p>Важные аспекты:</p>
+                    <ul>
+                        <li>Золотое сечение (1:1.618)</li>
+                        <li>Иерархия размеров</li>
+                        <li>Соотношение фигуры и фона</li>
+                    </ul>
+                    <p>Пример: Логотип Twitter использует золотую спираль в пропорциях птицы.</p>
+                </div>
+
+                <div class="design-principle">
+                    <div class="principle-header">
+                        <div class="principle-icon">♯</div>
+                        <h3>6. Единство и гармония</h3>
+                    </div>
+                    <p>Создает ощущение целостности дизайна:</p>
+                    <img src="images/harmony.jpg" alt="Примеры гармонии в дизайне" class="principle-image">
+                    <p>Достигается через:</p>
+                    <ul>
+                        <li>Единую цветовую палитру</li>
+                        <li>Схожие формы и линии</li>
+                        <li>Согласованные интервалы</li>
+                        <li>Повторяющиеся элементы</li>
+                    </ul>
+                    <p>Пример: Айдентика бренда Apple демонстрирует единство во всех продуктах.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2023 Искусство дизайна. Все права защищены.</p>
+    </footer>
+</body>
+</html>

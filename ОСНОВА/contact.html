@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Школа дизайна</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для страницы контактов */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-methods {
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: white;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .contact-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+            }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #3498db;
+        }
+
+        .map-container {
+            margin-top: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+            .social-links a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: #3498db;
+                color: white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                transition: background-color 0.3s;
+            }
+
+                .social-links a:hover {
+                    background-color: #2980b9;
+                }
+
+        /* Стили для формы */
+        .subscribe-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Стили для фреймов */
+        .frame-container {
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .frame-wrapper {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Playfair Display', serif;">Контакты</h1>
+        <p class="italic" style="font-family: 'Roboto', sans-serif;">Мы всегда рады вашим вопросам и предложениям</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="principles.html">Принципы</a></li>
+            <li><a href="styles.html">Стили</a></li>
+            <li><a href="tools.html">Инструменты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 style="font-family: 'Montserrat', sans-serif;">Наши контакты</h2>
+                <p style="font-family: 'Roboto', sans-serif;">Мы находимся в центре города и готовы ответить на все ваши вопросы. Наша команда экспертов по дизайну всегда готова помочь вам с вашими проектами.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h3 style="font-family: 'Montserrat', sans-serif; margin: 0;">Email</h3>
+                            <p style="margin: 5px 0 0;"><a href="mailto:info@designart.com">Max_kravcha@mail.ru</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h3 style="font-family: 'Montserrat', sans-serif; margin: 0;">Телефон</h3>
+                            <p style="margin: 5px 0 0;"><a href="tel:+79218352311">+7 (921) 835-23-11</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">🏢</span>
+                        <div>
+                            <h3 style="font-family: 'Montserrat', sans-serif; margin: 0;">Адрес</h3>
+                            <p style="margin: 5px 0 0;">г. Череповец</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <div>
+                            <h3 style="font-family: 'Montserrat', sans-serif; margin: 0;">Часы работы</h3>
+                            <p style="margin: 5px 0 0;">Пн-Пт: 12:00 - 24:00<br>Сб-Вс: ЧИЛИМ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Montserrat', sans-serif; margin-top: 30px;">Мой Telegram</h3>
+                <div class="telegram-link">
+                    <a href="https://t.me/Max_Kravcha" target="_blank" rel="noopener noreferrer">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="24" fill="url(#paint0_linear)" />
+                            <path d="M32.5 15.5L10.5 24L16 26.5L22 30L30 20L18 26.5L30 34L32.5 15.5Z" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
+                                    < stop-color="#2AABEE" />
+                                    <stop offset="1" stop-color="#229ED9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>@Max_Kravcha</span>
+                    </a>
+                </div>
+
+                <style>
+                    .telegram-link {
+                        margin-top: 15px;
+                    }
+
+                        .telegram-link a {
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 12px;
+                            text-decoration: none;
+                            transition: transform 0.3s ease;
+                        }
+
+                            .telegram-link a:hover {
+                                transform: translateY(-3px);
+                            }
+
+                        .telegram-link svg {
+                            width: 40px;
+                            height: 40px;
+                            filter: drop-shadow(0 4px 8px rgba(34, 158, 217, 0.3));
+                        }
+
+                        .telegram-link span {
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #229ED9;
+                            transition: color 0.3s;
+                        }
+
+                        .telegram-link a:hover span {
+                            color: #1E87B8;
+                        }
+                </style>
+
+                <div class="map-container">
+                    <h3 style="font-family: 'Montserrat', sans-serif;">Обезательно посетите!</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373414276736!2d37.6041193159306!3d55.75579798055358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5b1c3b9c3f%3A0x3b8e8e8e8e8e8e8!2z0JzQvtGB0LrQstCwINCc0L7RgdC60LLQsCDQvNC-0LvQtdC30L3QsNGPINC00L7QvNCw0LvRjNC90LDRjyDQv9C-0LvRjNGB0LrQsNGP!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="subscribe-form">
+                <h2 style="font-family: 'Montserrat', sans-serif;">Подписка на новости</h2>
+                <p style="font-family: 'Roboto', sans-serif;">Подпишитесь на нашу рассылку, чтобы получать последние новости о курсах, мастер-классах и событиях в мире дизайна.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="font-family: 'Montserrat', sans-serif;">Имя:</label>
+                        <input type="text" id="name" name="name" required style="font-family: 'Roboto', sans-serif;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="font-family: 'Montserrat', sans-serif;">Email:</label>
+                        <input type="email" id="email" name="email" required style="font-family: 'Roboto', sans-serif;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest" style="font-family: 'Montserrat', sans-serif;">Интересует:</label>
+                        <select id="interest" name="interest" style="font-family: 'Roboto', sans-serif;">
+                            <option value="graphic">Графический дизайн</option>
+                            <option value="web">Веб-дизайн</option>
+                            <option value="interior">Дизайн интерьеров</option>
+                            <option value="fashion">Модный дизайн</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" style="font-family: 'Montserrat', sans-serif;">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" style="font-family: 'Roboto', sans-serif;"></textarea>
+                    </div>
+
+                    <button type="submit" style="font-family: 'Montserrat', sans-serif;">Подписаться</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="frame-container">
+            <div class="youtube-channel">
+                <div class="channel-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FF0000">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                    <h3>Мой YouTube канал</h3>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=8yqS4pqYLSE&t=1s"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/@KravchuG" target="_blank" rel="noopener noreferrer" class="channel-link">
+                    Перейти на канал @KravchuG
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FF0000">
+                        <path d="M10 6v2h5.586l-6.293 6.293 1.414 1.414L17 9.414V15h2V6z" />
+                    </svg>
+                </a>
+            </div>
+
+            <style>
+                .youtube-channel {
+                    background: white;
+                    border-radius: 12px;
+                    padding: 20px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    margin: 30px 0;
+                    border: 1px solid #eee;
+                }
+
+                .channel-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 15px;
+                }
+
+                    .channel-header h3 {
+                        font-family: 'Montserrat', sans-serif;
+                        color: #333;
+                        margin: 0;
+                    }
+
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                    height: 0;
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
+
+                    .video-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+
+                .channel-link {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #FF0000;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 8px 12px;
+                    border-radius: 6px;
+                    transition: all 0.3s ease;
+                }
+
+                    .channel-link:hover {
+                        background: rgba(255, 0, 0, 0.1);
+                        transform: translateY(-2px);
+                    }
+
+                    .channel-link svg {
+                        transition: transform 0.3s ease;
+                    }
+
+                    .channel-link:hover svg {
+                        transform: translateX(3px);
+                    }
+            </style>
+
+            <div class="frame-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-family: 'Roboto', sans-serif;">© 2023 Школа дизайна. Все права защищены.</p>
+        <p style="font-family: 'Roboto', sans-serif;"><a href="#privacy">Политика конфиденциальности</a> | <a href="#terms">Условия использования</a></p>
+    </footer>
+</body>
+</html>

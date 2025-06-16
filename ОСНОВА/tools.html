@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты дизайна</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tool-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .tool-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .tool-card h3 {
+                color: #2c3e50;
+                margin-top: 0;
+            }
+
+        .tool-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+            .tool-link:hover {
+                background-color: rgba(52, 152, 219, 0.1);
+            }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+        .tool-icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Инструменты дизайнера</h1>
+        <p class="italic">Современные технологии для творчества</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="principles.html">Принципы</a></li>
+            <li><a href="styles.html">Стили</a></li>
+            <li><a href="tools.html" class="active">Инструменты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>Популярные инструменты дизайна</h2>
+                <p>Современные дизайнеры используют широкий спектр инструментов для создания своих работ:</p>
+
+                <div class="tool-card">
+                    <h3>Графические редакторы</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="tool-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="tool-icon">
+                                Adobe Photoshop
+                            </a> - растровая графика и фоторедактирование
+                        </li>
+                        <li>
+                            <a href="https://www.adobe.com/products/illustrator.html" target="_blank" class="tool-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="tool-icon">
+                                Adobe Illustrator
+                            </a> - векторная графика
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <h3>UI/UX дизайн</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.figma.com" target="_blank" class="tool-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="tool-icon">
+                                Figma
+                            </a> - облачный инструмент для интерфейсов
+                        </li>
+                        <li>
+                            <a href="https://www.sketch.com" target="_blank" class="tool-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Sketch_Logo.svg" alt="Sketch" class="tool-icon">
+                                Sketch
+                            </a> - дизайн UI/UX для Mac
+                        </li>
+                    </ul>
+                </div>
+
+                <h2>Видеообзор инструментов</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/BXbMzhhlXjw"
+                            title="Видео о дизайнерских инструментах"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Искусство дизайна.</p>
+    </footer>
+</body>
+</html>

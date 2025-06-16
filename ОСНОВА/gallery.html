@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея дизайна</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        .gallery-caption {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .gallery-item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Галерея дизайна</h1>
+        <p class="italic">Вдохновляющие примеры</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="principles.html">Принципы</a></li>
+            <li><a href="styles.html">Стили</a></li>
+            <li><a href="tools.html">Инструменты</a></li>
+            <li><a href="gallery.html" class="active">Галерея</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>Галерея дизайна</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/sov.jpg" alt="Современный дизайн" class="principle-image">
+                        <div class="gallery-caption">Современный дизайн</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/int.jpg" alt="Дизайн интерьера" class="principle-image">
+                        <div class="gallery-caption">Дизайн интерьера</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/grf.jpg" alt="Графический дизайн" class="principle-image">
+                        <div class="gallery-caption">Графический дизайн</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/ode.jpg" alt="Дизайн одежды" class="principle-image">
+                        <div class="gallery-caption">Дизайн одежды</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/pro.jpg" alt="Промышленный дизайн" class="principle-image">
+                        <div class="gallery-caption">Промышленный дизайн</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/veb.jpg" alt="Веб-дизайн" class="principle-image">
+                        <div class="gallery-caption">Современный веб-дизайн</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Искусство дизайна.</p>
+    </footer>
+</body>
+</html>
